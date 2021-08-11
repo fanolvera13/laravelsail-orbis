@@ -22,7 +22,7 @@ return [
             'profile' => 'r,u'
         ],
         'user' => [
-            'profile' => 'r,u',
+            'profile' => 'r,u'
         ],
         'clientes' => [
             'profile' => 'r,u',

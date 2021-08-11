@@ -24,6 +24,8 @@ Route::get('/', function () {
 Route::group(['middleware' => ['auth']], function(){
     Route::get('/dashboard','App\Http\Controllers\DashboardController@index')->name
     ('dashboard');
+    Route::get('dash.dashclientes', 'App\Http\Controllers\MenuController@getMenu');
+ 
 });
 
 require __DIR__.'/auth.php';
