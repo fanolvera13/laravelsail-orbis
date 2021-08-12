@@ -9,14 +9,6 @@ class DashboardController extends Controller
 {
     //
     public function index(){
-        $menu = new \App\Models\Menu;
-        $menuList = $menu->tree();
-
-
-        $menu = new \App\Models\Menu;
-        $menuList = $menu->tree();
-        
-       // return view('dashboard')->with('menulist', $menuList);
         
         if(Auth::user()->hasRole('clientes')){
             return view('dash.dashclientes')->with('menulist', $menuList);
